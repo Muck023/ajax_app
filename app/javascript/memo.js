@@ -12,7 +12,6 @@ const buildHTML = (XHR) => {
   return html;
 };
 
-
 function post (){
   const submit = document.getElementById("submit");
   submit.addEventListener("click", (e) => {
@@ -31,9 +30,9 @@ function post (){
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
       list.insertAdjacentHTML("afterend", buildHTML(XHR));
-        formText.value = "";
+      formText.value = "";
     };
   });
- };
- 
- window.addEventListener('load', post);
+};
+
+window.addEventListener('load', post);
